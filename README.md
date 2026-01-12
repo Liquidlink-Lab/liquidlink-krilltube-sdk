@@ -65,6 +65,11 @@ Returns the backend health message.
 - `query.start_time`: Start timestamp (seconds)
 - `query.end_time`: End timestamp (seconds)
 
+### `client.getScoreboard()`
+
+- Fetches the scoreboard for the current `chain`.
+- Data is refreshed every 10 minutes.
+
 ## Configuration
 
 The SDK selects the built-in API base URL by `chain` and `network`. You can access the current config via `getConfig()`:

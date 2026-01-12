@@ -61,4 +61,8 @@ export class Client {
   async getPointsByAddress(query: { address: string }) {
     return await this.#apiClient.getJSON("/api/v1/points", { ...query, chain: this.#chain });
   }
+
+  async getScoreboard() {
+    return await this.#apiClient.getJSON("/api/v1/scoreboard", { chain: this.#chain });
+  }
 }
